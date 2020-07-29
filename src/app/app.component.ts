@@ -4,7 +4,6 @@ import { Platform, IonRouterOutlet, AlertController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Router } from '@angular/router';
-import { async } from '@angular/core/testing';
 
 @Component({
   selector: 'app-root',
@@ -78,7 +77,7 @@ export class AppComponent implements OnDestroy {
             text: 'Cancel',
             role: 'cancel',
             cssClass: 'secondary',
-            handler: (blah) => {
+            handler: () => {
               console.log('Confirm Cancel: blah');
             }
           }, {
